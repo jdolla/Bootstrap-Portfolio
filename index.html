@@ -48,9 +48,14 @@
             color: #4da8a3;
         }
 
+        #sidebar{
+            border: .5px solid #cbcbcb;
+            min-width: 280px;
+        }
+        
         .bug {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             padding: 0 10px 20px 10px;
         }
     </style>
@@ -109,25 +114,25 @@
                 </div>
             </div>
             <div class="col-md-3 ml-auto mb-4">
-                <div class="container bg-white" style="border: .5px solid #cbcbcb;">
+                <div class="container bg-white" id="sidebar" >
                     <div class="row pt-4 mx-3 px-2 bigFont mainColor tops" id="sidebar-top">
                         <div class="container text-center">
                             <h6 style="font-weight:bold;">Connect With Me</h6>
                         </div>
                     </div>
-                    <div class="row">
-                        <ul class="navList">
-                            <li>
+                    <div class="row pt-3 justify-content-center">
+                        <ul class="nav">
+                            <li class="nav-item">
                                 <a href="#">
                                     <img alt="GitHub" class="bug" src="./assets/images/github.png" />
                                 </a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#">
                                     <img alt="LinkedIn" class="bug" src="./assets/images/linkedin.png">
                                 </a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#">
                                     <img alt="StackOverflow" class="bug" src="./assets/images/stackoverflow.png">
                                 </a>
