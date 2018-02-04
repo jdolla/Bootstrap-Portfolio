@@ -7,62 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
-    <style>
-        /* For Sticky Footers::after
-            https://getbootstrap.com/docs/4.0/examples/sticky-footer/
-         */
-
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
-        body {
-            background-image: url("./assets/images/concrete-texture.png");
-            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-            margin-bottom: 60px;
-            min-width: 650px;
-        }
-
-        .bigFont {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        .mainColor {
-            color: #4ca8a4;
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 80px;
-            line-height: 80px;
-            background-color: #666666;
-            color: #b3b3a6;
-            border-top: 3px solid #4ca8a4;
-        }
-
-        .tops {
-            border-bottom: 2px solid #cbcbcb;
-            color: #4da8a3;
-        }
-
-        #sidebar{
-            border: .5px solid #cbcbcb;
-            min-width: 280px;
-        }
-        
-        .bug {
-            width: 60px;
-            height: 60px;
-            padding: 0 10px 20px 10px;
-        }
-    </style>
+    <!-- overrides -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
+    <!-- Headder Navigation -->
     <div class="container-fluid bg-white mt-2" style="border-bottom: 2px solid #cbcbcb;">
         <div class="container p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
@@ -87,6 +38,8 @@
             </nav>
         </div>
     </div>
+
+    <!-- Main Content -->
     <div class="container mt-4 mb-2">
         <div class="row">
             <div class="col-md-8 bg-white pb-4 mb-4" style="border: .5px solid #cbcbcb;">
@@ -114,14 +67,14 @@
                 </div>
             </div>
             <div class="col-md-3 ml-auto mb-4">
-                <div class="container bg-white" id="sidebar" >
+                <div class="container bg-white float-right" id="sidebar" >
                     <div class="row pt-4 mx-3 px-2 bigFont mainColor tops" id="sidebar-top">
                         <div class="container text-center">
                             <h6 style="font-weight:bold;">Connect With Me</h6>
                         </div>
                     </div>
                     <div class="row pt-3 justify-content-center">
-                        <ul class="nav">
+                        <ul class="nav" id="contact-me">
                             <li class="nav-item">
                                 <a href="#">
                                     <img alt="GitHub" class="bug" src="./assets/images/github.png" />
@@ -144,11 +97,14 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
             &copy; Copyright 2018 Jason Kososki
         </div>
     </footer>
+
+
 
     <!-- Bootstrap Javascript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

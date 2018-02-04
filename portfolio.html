@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- overrides -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/portfolio.css"> 
+</head>
+
+<body>
+
+    <div class="container-fluid bg-white mt-2" style="border-bottom: 2px solid #cbcbcb;">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
+                <a class="navbar-brand my-0 p-4 bigFont" href="./index.html" style="background: #4da8a3;color:#ffffff;font-size:24px;font-weight:bold;">Jason Kososki</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navHeader">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navHeader">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">About</a>
+                        </li>
+                        <li class="nav-item active" style="border-left: .5px solid #cbcbcb;">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" style="border-left: .5px solid #cbcbcb;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container mt-4 mb-2">
+        <div class="row">
+            <div class="col-md-8 bg-white pb-4 mb-4" style="border: .5px solid #cbcbcb;">
+                <div class="row pt-4 mx-3 px-2 bigFont tops">
+                    <h3 style="font-weight: bolder;">Portfolio</h3>
+                </div>
+                <div class="row mx-3 pt-3">
+                    <div class="col-5">
+                        <div class="row justify-content-center tile-row text-center position-relative">
+                            <img src="./assets/images/robot.jpg" alt="Robot Pic" class="tile-image">
+                            <h4 class="position-absolute tile-tag text-white">Hang Man</h4>
+                        </div>
+                        <div class="row justify-content-center tile-row text-center position-relative">
+                                <img src="./assets/images/question.jpg" alt="Questions Pic" class="tile-image">
+                                <h4 class="position-absolute tile-tag text-white">Trivia Game</h4>
+                        </div>
+                        <div class="row justify-content-center tile-row position-relative text-center">
+                                <img src="./assets/images/rabbit.jpg" alt="Rabbit Pic" class="tile-image">
+                                <h4 class="position-absolute tile-tag text-white">Paper Rock Scissors</h4>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-5">
+                        <div class="row justify-content-center tile-row position-relative text-center">
+                                <img src="./assets/images/dice.jpg" alt="Dice Pic" class="tile-image">
+                                <h4 class="position-absolute tile-tag text-white">RPG Game</h4>
+                        </div>
+                        <div class="row justify-content-center tile-row position-relative text-center">
+                                <img src="./assets/images/light.jpg" alt="Light Pic" class="tile-image">
+                                <h4 class="position-absolute tile-tag text-white">Rutgers Info Widget</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 ml-auto mb-4">
+                <div class="container bg-white float-right" id="sidebar">
+                    <div class="row pt-4 mx-3 px-2 bigFont mainColor tops" id="sidebar-top">
+                        <div class="container text-center">
+                            <h6 style="font-weight:bold;">Connect With Me</h6>
+                        </div>
+                    </div>
+                    <div class="row pt-3 justify-content-center">
+                        <ul class="nav" id="contact-me">
+                            <li class="nav-item">
+                                <a href="#">
+                                    <img alt="GitHub" class="bug" src="./assets/images/github.png" />
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <img alt="LinkedIn" class="bug" src="./assets/images/linkedin.png">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <img alt="StackOverflow" class="bug" src="./assets/images/stackoverflow.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            &copy; Copyright 2018 Jason Kososki
+        </div>
+    </footer>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
